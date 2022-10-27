@@ -1,4 +1,5 @@
 @import "styles2.css";
+
    h1, p {
       padding: 0;
       margin: 0;
@@ -24,10 +25,11 @@
    p.first {text-indent: 0em;
    }
 
-   body {
-    background-color: var(--c-background-color);
 
-   }
+body {
+    background-color: var(--c-background-color);
+    max-width: 800px;
+}
    header,
    footer {
     background-color: var(--c-background-highlights);
@@ -36,11 +38,54 @@
    main,
    footer,
    header{
-    background-color: var(--base-font-color);
+    color: var(--base-font-color);
    }
 
-   link {
+   a {
     color: var(--c-magenta);
    }
+   nav a:hover {
+    color: orange;
+  }
 
+  div.subsection{
+    border: solid;
+    border-width: 3px;
+    border-color: var(--c-cyan);
+}
 
+title{
+   text-align: center;
+   size: 150% ;
+   color: var(--c-yellow);
+}
+
+nav ul {
+    list-style-type: none;
+    display:flex;
+    padding:0;
+  }
+
+h1,h2,h3{
+    padding-top: 50px;
+}
+aside {
+    color: var(--c-green);
+    width:12%;
+    float:right;
+}
+aside a{
+    color: var(--c-red)
+}
+aside a:hover{
+    color: var(--c-blue)
+}
+article{
+    float: left;
+    width:88%
+}
+header{
+    text-align: center;
+    font-size:150%;
+    color: var(--c-yellow)
+}
